@@ -1,11 +1,11 @@
 const Controller = require('./Controller.js');
 const PessoaService = require('../services/PessoaService.js');
 
-const pessoaServices = new PessoaService();
+const pessoaService = new PessoaService();
 
 class PessoaController extends Controller {
     constructor() {
-        super(pessoaServices);
+        super(pessoaService);
     }
 }
 
