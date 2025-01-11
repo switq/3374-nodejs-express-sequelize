@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
       Curso.belongsTo(models.Pessoa, {
         foreignKey: 'docente_id'
       });
-      Curso.hasMany(models.Pessoa, {
+      Curso.hasMany(models.Matricula, {
         foreignKey: 'curso_id'
       });
     }
